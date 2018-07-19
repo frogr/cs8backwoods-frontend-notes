@@ -19,7 +19,13 @@ src
 ```
 
 ### Account
+
+This is for all NON BILLING account-related changes. Like if a user needs to change their password, email, or delete their account. Maybe in the future adding a contact support link here too could be nice too.
+
 ### Billing
+
+This is for BILLING information. If a user has not purchased their subscription, being linked here will give them the opportunity to do that. Otherwise, if a user is already subscribed and authenticated, this page should show data about their subscription (like time related) and offer a prompt to cancel their subscription or change their credit card info and etc.
+
 ### Debug
 ### Landing
 ### Nav
