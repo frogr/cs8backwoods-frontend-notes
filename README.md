@@ -45,3 +45,29 @@ This is for INDIVIDUAL trips. NOT the list of all trips. From this view, you'll 
 ### TripList
 
 This is the LIST of trips. If there are no trips, the `TripsEmpty` component should appear and prompt a user to create their first trip. If the signed in user does have trips, `Trips` will appear and have a small preview. The user can then click on the trip to view or modify it, or archive it.
+
+---
+
+## Understanding some of the more complicated files
+
+### Nav
+
+So inside the nav there's four different files:
+
+```
+Nav
+├── Nav.jsx
+├── NavBar.jsx
+├── NavBreadcrumbs.jsx
+└── SignOut.jsx
+```
+
+The `Nav.jsx` component is to act as an index for the output of the Nav component. The `Navbar.jsx`, `NavBreadcrumbs.jsx`, and `SignOut.jsx` components all feed into it, and then `Nav.jsx` is used through the rest of the application where the user will see a nav (which is almost every page of the application)
+
+### Trip List
+
+The trip list might be a little bit confusing. It should be a list of trips (probably by mapping through an array in the database or something similar) that the user has created. If, however, that array of lists is empty, it should display `TripListEmpty.jsx` and prompt a user to create a trip, rather than showing a list of trips.
+
+### Trip vs TripCreate
+
+`Trip.jsx` is a single Trip. It will show the map as well as a list of waypoints. It relates to Trip (Open) in the balsamiq previews. `TripCreate.jsx` is the component that appears when the user clicks the prompt to make a new trip.
