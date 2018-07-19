@@ -1,4 +1,4 @@
-# CS8 Backwoods Notes
+# CS8 Backwoods Frontend Notes
 
 In this file I'll be talking about some of the scaffolding decisions behind the frontend of the CS8 file structure and route layout. If you're not sure where you should be contributing, this is a good reference sheet to help you get acquainted with the structure of the frontend of this application.
 
@@ -44,4 +44,4 @@ This is for INDIVIDUAL trips. NOT the list of all trips. From this view, you'll 
 
 ### TripList
 
-This is the LIST of trips. If there are no trips, the `TripsEmpty` component should appear and prompt a user to create their first trip. If the signed in user does have trips, `Trips` will appear and have a small preview. The user can then click on the trip to view or modify it, or archive it. 
+This is the LIST of trips. If there are no trips, the `TripsEmpty` component should appear and prompt a user to create their first trip. If the signed in user does have trips, `Trips` will appear and have a small preview. The user can then click on the trip to view or modify it, or archive it.
